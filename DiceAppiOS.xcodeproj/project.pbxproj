@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2389CE2AC68AE8DF1AAFC721 /* Pods_DiceAppiOS_DiceAppiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBBC0734199A65DA98BA9F1 /* Pods_DiceAppiOS_DiceAppiOSTests.framework */; };
+		6E6DD33FE45578954DA34245 /* Pods_DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB33272CA4856864AF11814 /* Pods_DiceAppiOS.framework */; };
 		BFC6177C2672E22800C9DC8A /* DiceAppiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFC617842672E25600C9DC8A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC617832672E25600C9DC8A /* HomeController.swift */; };
 		BFC6178F2672E30800C9DC8A /* DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC617772672E22800C9DC8A /* DiceAppiOS.framework */; };
@@ -24,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28D91C29CADA5FAF0BD2390A /* Pods-DiceAppiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS.release.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS/Pods-DiceAppiOS.release.xcconfig"; sourceTree = "<group>"; };
+		6870C7FB33F76BEDE6B09970 /* Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BB33272CA4856864AF11814 /* Pods_DiceAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC617772672E22800C9DC8A /* DiceAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiceAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceAppiOS.h; sourceTree = "<group>"; };
 		BFC6177B2672E22800C9DC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +37,9 @@
 		BFC6178E2672E30800C9DC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC617992672E31B00C9DC8A /* DiceAppiOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DiceAppiOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		BFC6179A2672E31B00C9DC8A /* HomeControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerTests.swift; sourceTree = "<group>"; };
+		DEBBC0734199A65DA98BA9F1 /* Pods_DiceAppiOS_DiceAppiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceAppiOS_DiceAppiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A292E429DFAD189688344D /* Pods-DiceAppiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS.debug.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS/Pods-DiceAppiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FBFFBB3CD0DC6746C947442A /* Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6DD33FE45578954DA34245 /* Pods_DiceAppiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,18 +56,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC6178F2672E30800C9DC8A /* DiceAppiOS.framework in Frameworks */,
+				2389CE2AC68AE8DF1AAFC721 /* Pods_DiceAppiOS_DiceAppiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BF29EBB0F649DA7C51E8C7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BB33272CA4856864AF11814 /* Pods_DiceAppiOS.framework */,
+				DEBBC0734199A65DA98BA9F1 /* Pods_DiceAppiOS_DiceAppiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75EE1859BE4E69A196C56AAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3A292E429DFAD189688344D /* Pods-DiceAppiOS.debug.xcconfig */,
+				28D91C29CADA5FAF0BD2390A /* Pods-DiceAppiOS.release.xcconfig */,
+				FBFFBB3CD0DC6746C947442A /* Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig */,
+				6870C7FB33F76BEDE6B09970 /* Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BFC6176D2672E22800C9DC8A = {
 			isa = PBXGroup;
 			children = (
 				BFC617792672E22800C9DC8A /* DiceAppiOS */,
 				BFC6178B2672E30800C9DC8A /* DiceAppiOSTests */,
 				BFC617782672E22800C9DC8A /* Products */,
+				75EE1859BE4E69A196C56AAC /* Pods */,
+				5BF29EBB0F649DA7C51E8C7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFC6177F2672E22800C9DC8A /* Build configuration list for PBXNativeTarget "DiceAppiOS" */;
 			buildPhases = (
+				9077A92F0B086FC3E3B0A8AA /* [CP] Check Pods Manifest.lock */,
 				BFC617722672E22800C9DC8A /* Headers */,
 				BFC617732672E22800C9DC8A /* Sources */,
 				BFC617742672E22800C9DC8A /* Frameworks */,
@@ -127,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFC617922672E30800C9DC8A /* Build configuration list for PBXNativeTarget "DiceAppiOSTests" */;
 			buildPhases = (
+				482E06170CC081A314C04E01 /* [CP] Check Pods Manifest.lock */,
 				BFC617862672E30800C9DC8A /* Sources */,
 				BFC617872672E30800C9DC8A /* Frameworks */,
 				BFC617882672E30800C9DC8A /* Resources */,
+				C01AE0B2DAFF8F1DFFEEC928 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +231,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		482E06170CC081A314C04E01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiceAppiOS-DiceAppiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9077A92F0B086FC3E3B0A8AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiceAppiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C01AE0B2DAFF8F1DFFEEC928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFC617732672E22800C9DC8A /* Sources */ = {
@@ -348,6 +448,7 @@
 		};
 		BFC617802672E22800C9DC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3A292E429DFAD189688344D /* Pods-DiceAppiOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +474,7 @@
 		};
 		BFC617812672E22800C9DC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D91C29CADA5FAF0BD2390A /* Pods-DiceAppiOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +499,7 @@
 		};
 		BFC617932672E30800C9DC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFFBB3CD0DC6746C947442A /* Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -417,6 +520,7 @@
 		};
 		BFC617942672E30800C9DC8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6870C7FB33F76BEDE6B09970 /* Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
