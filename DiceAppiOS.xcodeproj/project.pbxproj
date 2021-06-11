@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2389CE2AC68AE8DF1AAFC721 /* Pods_DiceAppiOS_DiceAppiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBBC0734199A65DA98BA9F1 /* Pods_DiceAppiOS_DiceAppiOSTests.framework */; };
 		6E6DD33FE45578954DA34245 /* Pods_DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB33272CA4856864AF11814 /* Pods_DiceAppiOS.framework */; };
+		BF798CA22672E73D00A9260F /* HomeControllerSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF798CA12672E73D00A9260F /* HomeControllerSSTests.swift */; };
 		BFC6177C2672E22800C9DC8A /* DiceAppiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFC617842672E25600C9DC8A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC617832672E25600C9DC8A /* HomeController.swift */; };
 		BFC6178F2672E30800C9DC8A /* DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC617772672E22800C9DC8A /* DiceAppiOS.framework */; };
@@ -29,6 +30,7 @@
 		28D91C29CADA5FAF0BD2390A /* Pods-DiceAppiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS.release.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS/Pods-DiceAppiOS.release.xcconfig"; sourceTree = "<group>"; };
 		6870C7FB33F76BEDE6B09970 /* Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BB33272CA4856864AF11814 /* Pods_DiceAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF798CA12672E73D00A9260F /* HomeControllerSSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerSSTests.swift; sourceTree = "<group>"; };
 		BFC617772672E22800C9DC8A /* DiceAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiceAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceAppiOS.h; sourceTree = "<group>"; };
 		BFC6177B2672E22800C9DC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,8 +82,23 @@
 				FBFFBB3CD0DC6746C947442A /* Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig */,
 				6870C7FB33F76BEDE6B09970 /* Pods-DiceAppiOS-DiceAppiOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF798CA02672E71C00A9260F /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF798CA12672E73D00A9260F /* HomeControllerSSTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		BF798CA72672E8A200A9260F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6179A2672E31B00C9DC8A /* HomeControllerTests.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		BFC6176D2672E22800C9DC8A = {
@@ -117,9 +134,10 @@
 		BFC6178B2672E30800C9DC8A /* DiceAppiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFC6178E2672E30800C9DC8A /* Info.plist */,
-				BFC6179A2672E31B00C9DC8A /* HomeControllerTests.swift */,
+				BF798CA02672E71C00A9260F /* SnapshotTests */,
+				BF798CA72672E8A200A9260F /* UI */,
 				BFC617992672E31B00C9DC8A /* DiceAppiOSTests-Bridging-Header.h */,
+				BFC6178E2672E30800C9DC8A /* Info.plist */,
 			);
 			path = DiceAppiOSTests;
 			sourceTree = "<group>";
@@ -309,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF798CA22672E73D00A9260F /* HomeControllerSSTests.swift in Sources */,
 				BFC6179B2672E31B00C9DC8A /* HomeControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
