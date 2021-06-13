@@ -29,6 +29,7 @@
 		BFDC3C292676B63E00E08EBD /* RollControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3C282676B63E00E08EBD /* RollControllerTests.swift */; };
 		BFDC3C302676B71200E08EBD /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE412676994700242B2B /* XCTestCase+Extensions.swift */; };
 		BFDC3C352676BAC500E08EBD /* RollController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3C342676BAC500E08EBD /* RollController.swift */; };
+		BFDC3C3A2676BB6B00E08EBD /* RollControllerSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDC3C392676BB6B00E08EBD /* RollControllerSSTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		BFDC3C1E2676B2B000E08EBD /* RandomDiceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceGenerator.swift; sourceTree = "<group>"; };
 		BFDC3C282676B63E00E08EBD /* RollControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollControllerTests.swift; sourceTree = "<group>"; };
 		BFDC3C342676BAC500E08EBD /* RollController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollController.swift; sourceTree = "<group>"; };
+		BFDC3C392676BB6B00E08EBD /* RollControllerSSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollControllerSSTests.swift; sourceTree = "<group>"; };
 		DEBBC0734199A65DA98BA9F1 /* Pods_DiceAppiOS_DiceAppiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceAppiOS_DiceAppiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A292E429DFAD189688344D /* Pods-DiceAppiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS.debug.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS/Pods-DiceAppiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FBFFBB3CD0DC6746C947442A /* Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS-DiceAppiOSTests/Pods-DiceAppiOS-DiceAppiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				BF798CA12672E73D00A9260F /* HomeControllerSSTests.swift */,
+				BFDC3C392676BB6B00E08EBD /* RollControllerSSTests.swift */,
 			);
 			path = SnapshotTests;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFDC3C302676B71200E08EBD /* XCTestCase+Extensions.swift in Sources */,
+				BFDC3C3A2676BB6B00E08EBD /* RollControllerSSTests.swift in Sources */,
 				BF798CA22672E73D00A9260F /* HomeControllerSSTests.swift in Sources */,
 				BFC6179B2672E31B00C9DC8A /* HomeControllerTests.swift in Sources */,
 				BFDC3C292676B63E00E08EBD /* RollControllerTests.swift in Sources */,
