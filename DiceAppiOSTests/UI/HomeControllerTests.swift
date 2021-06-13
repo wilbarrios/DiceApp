@@ -14,7 +14,7 @@ class HomeControllerTests: XCTestCase {
         let sut = HomeController()
         sut.loadViewIfNeeded()
         
-        XCTAssertEqual(sut.getBackground(), UIColor.green)
+        XCTAssertEqual(sut.getBackground(), UIColor.systemBackground)
     }
 }
 

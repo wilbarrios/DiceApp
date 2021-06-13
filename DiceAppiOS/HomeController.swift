@@ -11,7 +11,7 @@ import UIKit
 class HomeController: UIViewController {
     // MARK: Helpers
     private func setupLayout() {
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.systemBackground
     }
     
     // MARK: VC Life Cycle

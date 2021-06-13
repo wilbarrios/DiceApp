@@ -14,8 +14,10 @@ class HomeControllerSSTests: XCTestCase {
     func test_home() {
         let sut = HomeController()
         let result = verifySnapshot(matching: sut,
-                                    as: .image,
+                                    as: .image(on: .iPhoneX,
+                                               traits: UITraitCollection(userInterfaceStyle: .dark)),
                                     named: "default",
+//                                    record: true,
                                     testName: "HomeController-default")
         XCTAssertNil(result)
     }
