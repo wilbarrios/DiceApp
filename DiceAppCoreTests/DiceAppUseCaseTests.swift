@@ -63,26 +63,34 @@ class DiceAppUseCaseTests: XCTestCase {
     }
     
     func test_loadDiceSucceed_presentsDice() {
-        let (sut, loader, view, _) = makeSUT()
-        
-        sut.loadDices()
         let diceData = [makeDice(), makeDice()]
-        loader.complete(.success(diceData))
         
-        XCTAssertEqual(view.presentedDices, diceData)
+        assert(makeSUT(), completeResult: .success(diceData), expectedDices: diceData)
     }
     
     func test_loadDiceSucceed_doesNotPresentErrorMessage() {
-        let (sut, loader, _, errorView) = makeSUT()
-        
-        sut.loadDices()
         let diceData = [makeDice(), makeDice()]
-        loader.complete(.success(diceData))
         
-        XCTAssertEqual(errorView.presentedErrorMessage, nil)
+        assert(makeSUT(), completeResult: .success(diceData), expectedErrorMessage: nil)
     }
     
     // MARK: Helpers
+    private func makeAnyError() -> NSError {
+        return NSError(domain: "anyDomain", code: 1)
+    }
+    
+    private func assert(_ sutTuple: (sut: DiceAppUseCase, loader: DiceLoaderMock, view: DiceViewMock, errorView: ErrorViewMock), completeResult: Result<[Dice], Error>, action: @escaping () -> Void = {}, expectedDices: [Dice]? = nil, expectedErrorMessage: String? = nil, file: StaticString = #file, line: UInt = #line) {
+        let (sut, loader, view, errorView) = sutTuple
+        sut.loadDices()
+
+        action()
+        loader.complete(completeResult)
+        
+        if let _ed = expectedDices {
+            XCTAssertEqual(view.presentedDices, _ed, file: file, line: line)
+        }
+        XCTAssertEqual(errorView.presentedErrorMessage, expectedErrorMessage, file: file, line: line)
+    }
     
     private func makeDice(value: Int = 2) -> Dice {
         Dice(value: value)
