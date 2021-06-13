@@ -74,6 +74,10 @@ class DiceAppUseCaseTests: XCTestCase {
         assert(makeSUT(), completeResult: .success(diceData), expectedErrorMessage: nil)
     }
     
+    func test_loadDiceFailed_doesNotPresentDices() {
+        assert(makeSUT(), completeResult: .failure(makeAnyError()), expectedDices: nil)
+    }
+    
     // MARK: Helpers
     private func makeAnyError() -> NSError {
         return NSError(domain: "anyDomain", code: 1)
