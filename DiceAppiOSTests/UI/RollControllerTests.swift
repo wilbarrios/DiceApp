@@ -7,35 +7,7 @@
 
 import Foundation
 import XCTest
-
-final class RollController {
-    var onUserRequestRoll: (() -> Void)?
-    
-    lazy var view: UIView = {
-        let v = UIView()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        v.addSubview(button)
-        
-        NSLayoutConstraint.activate([
-            button.centerYAnchor.constraint(equalTo: button.centerYAnchor),
-            button.centerXAnchor.constraint(equalTo: button.centerXAnchor)
-        ])
-        
-        return v
-    }()
-    
-    private lazy var button: UIButton = {
-        let b = UIButton()
-        b.setTitle("Roll", for: .normal)
-        b.addTarget(self, action: #selector(buttonHandler), for: .touchUpInside)
-        return b
-    }()
-    
-    @objc
-    private func buttonHandler() {
-        onUserRequestRoll?()
-    }
-}
+@testable import DiceAppiOS
 
 class RollControllerTests: XCTestCase {
     func test_controller_presentsExpectedTitle() {
