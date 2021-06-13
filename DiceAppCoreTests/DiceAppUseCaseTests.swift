@@ -72,6 +72,16 @@ class DiceAppUseCaseTests: XCTestCase {
         XCTAssertEqual(view.presentedDices, diceData)
     }
     
+    func test_loadDiceSucceed_doesNotPresentErrorMessage() {
+        let (sut, loader, _, errorView) = makeSUT()
+        
+        sut.loadDices()
+        let diceData = [makeDice(), makeDice()]
+        loader.complete(.success(diceData))
+        
+        XCTAssertEqual(errorView.presentedErrorMessage, nil)
+    }
+    
     // MARK: Helpers
     
     private func makeDice(value: Int = 2) -> Dice {
