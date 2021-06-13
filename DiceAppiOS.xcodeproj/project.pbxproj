@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		BFBCEE5A2676A70D00242B2B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE592676A70D00242B2B /* ErrorView.swift */; };
 		BFBCEE642676A73B00242B2B /* DiceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE632676A73B00242B2B /* DiceLoader.swift */; };
 		BFBCEE6A2676A76E00242B2B /* DiceAppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE692676A76E00242B2B /* DiceAppUseCase.swift */; };
+		BFBCEE7B2676A82000242B2B /* DiceAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBCEE182676968900242B2B /* DiceAppCore.framework */; platformFilter = ios; };
+		BFBCEE7C2676A82000242B2B /* DiceAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFBCEE182676968900242B2B /* DiceAppCore.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFC6177C2672E22800C9DC8A /* DiceAppiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFC617842672E25600C9DC8A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC617832672E25600C9DC8A /* HomeController.swift */; };
 		BFC6178F2672E30800C9DC8A /* DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC617772672E22800C9DC8A /* DiceAppiOS.framework */; };
@@ -32,6 +34,13 @@
 			remoteGlobalIDString = BFBCEE172676968900242B2B;
 			remoteInfo = DiceAppCore;
 		};
+		BFBCEE7D2676A82000242B2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFC6176E2672E22800C9DC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFBCEE172676968900242B2B;
+			remoteInfo = DiceAppCore;
+		};
 		BFC617902672E30800C9DC8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFC6176E2672E22800C9DC8A /* Project object */;
@@ -40,6 +49,20 @@
 			remoteInfo = DiceAppiOS;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFBCEE7F2676A82000242B2B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFBCEE7C2676A82000242B2B /* DiceAppCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		28D91C29CADA5FAF0BD2390A /* Pods-DiceAppiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceAppiOS.release.xcconfig"; path = "Target Support Files/Pods-DiceAppiOS/Pods-DiceAppiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBCEE7B2676A82000242B2B /* DiceAppCore.framework in Frameworks */,
 				6E6DD33FE45578954DA34245 /* Pods_DiceAppiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,10 +324,12 @@
 				BFC617732672E22800C9DC8A /* Sources */,
 				BFC617742672E22800C9DC8A /* Frameworks */,
 				BFC617752672E22800C9DC8A /* Resources */,
+				BFBCEE7F2676A82000242B2B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BFBCEE7E2676A82000242B2B /* PBXTargetDependency */,
 			);
 			name = DiceAppiOS;
 			productName = DiceAppiOS;
@@ -520,6 +546,12 @@
 			target = BFBCEE172676968900242B2B /* DiceAppCore */;
 			targetProxy = BFBCEE2D267696AD00242B2B /* PBXContainerItemProxy */;
 		};
+		BFBCEE7E2676A82000242B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = BFBCEE172676968900242B2B /* DiceAppCore */;
+			targetProxy = BFBCEE7D2676A82000242B2B /* PBXContainerItemProxy */;
+		};
 		BFC617912672E30800C9DC8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BFC617762672E22800C9DC8A /* DiceAppiOS */;
@@ -550,6 +582,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -577,6 +610,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -598,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wb.devs.DiceAppCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -620,6 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wb.devs.DiceAppCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
