@@ -20,6 +20,7 @@
 		BFBCEE6A2676A76E00242B2B /* DiceAppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE692676A76E00242B2B /* DiceAppUseCase.swift */; };
 		BFBCEE7B2676A82000242B2B /* DiceAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBCEE182676968900242B2B /* DiceAppCore.framework */; platformFilter = ios; };
 		BFBCEE7C2676A82000242B2B /* DiceAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFBCEE182676968900242B2B /* DiceAppCore.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFBCEE872676A94F00242B2B /* RandomDiceGeneratorUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBCEE862676A94F00242B2B /* RandomDiceGeneratorUseCaseTests.swift */; };
 		BFC6177C2672E22800C9DC8A /* DiceAppiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFC617842672E25600C9DC8A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC617832672E25600C9DC8A /* HomeController.swift */; };
 		BFC6178F2672E30800C9DC8A /* DiceAppiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC617772672E22800C9DC8A /* DiceAppiOS.framework */; };
@@ -80,6 +81,7 @@
 		BFBCEE592676A70D00242B2B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		BFBCEE632676A73B00242B2B /* DiceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceLoader.swift; sourceTree = "<group>"; };
 		BFBCEE692676A76E00242B2B /* DiceAppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceAppUseCase.swift; sourceTree = "<group>"; };
+		BFBCEE862676A94F00242B2B /* RandomDiceGeneratorUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDiceGeneratorUseCaseTests.swift; sourceTree = "<group>"; };
 		BFC617772672E22800C9DC8A /* DiceAppiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DiceAppiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6177A2672E22800C9DC8A /* DiceAppiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceAppiOS.h; sourceTree = "<group>"; };
 		BFC6177B2672E22800C9DC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				BFBCEE402676993800242B2B /* Helpers */,
 				BFBCEE2B267696AD00242B2B /* Info.plist */,
 				BFBCEE3A2676975700242B2B /* DiceAppUseCaseTests.swift */,
+				BFBCEE862676A94F00242B2B /* RandomDiceGeneratorUseCaseTests.swift */,
 			);
 			path = DiceAppCoreTests;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			files = (
 				BFBCEE422676994700242B2B /* XCTestCase+Extensions.swift in Sources */,
 				BFBCEE3B2676975700242B2B /* DiceAppUseCaseTests.swift in Sources */,
+				BFBCEE872676A94F00242B2B /* RandomDiceGeneratorUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
