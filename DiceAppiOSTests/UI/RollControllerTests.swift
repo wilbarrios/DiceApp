@@ -38,6 +38,12 @@ final class RollController {
 }
 
 class RollControllerTests: XCTestCase {
+    func test_controller_presentsExpectedTitle() {
+        let sut = makeSUT()
+        
+        XCTAssertEqual(sut.presentedTitle, "Roll")
+    }
+    
     func test_init_doesNotTriggerUserAction() {
         var userActionCallCount = 0
         let _ = makeSUT(onUserInteraction: { userActionCallCount += 1 })
@@ -66,4 +72,7 @@ private extension RollController {
         button.sendActions(for: .touchUpInside)
     }
     
+    var presentedTitle: String? {
+        button.title(for: .normal)
+    }
 }
