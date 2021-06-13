@@ -13,14 +13,19 @@ struct Dice {
 }
 
 protocol DiceLoader {
-    func getDice(completion: @escaping (Result<Dice, Error>) -> Void)
+    func getDice(diceCount: Int, completion: @escaping (Result<[Dice], Error>) -> Void)
 }
 
 class DiceAppUseCase {
     private let loader: DiceLoader
+    private var DICE_COUNT: Int { 2 }
     
     init(loader: DiceLoader) {
         self.loader = loader
+    }
+    
+    func loadDices() {
+        loader.getDice(diceCount: DICE_COUNT) {_ in }
     }
 }
 
@@ -28,6 +33,13 @@ class DiceAppUseCaseTests: XCTestCase {
     func test_init_doesNotLoadDices() {
         let (_, loader) = makeSUT()
         XCTAssertEqual(loader.messagesCount, 0)
+    }
+    
+    func test_loadDices_fetchDices() {
+        let (sut, loader) = makeSUT()
+        sut.loadDices()
+        
+        XCTAssertEqual(loader.messagesCount, 1)
     }
     
     private func makeSUT(file: StaticString = #file, line: UInt = #line) -> (sut: DiceAppUseCase, loader: DiceLoaderMock) {
@@ -39,11 +51,11 @@ class DiceAppUseCaseTests: XCTestCase {
     }
     
     private class DiceLoaderMock: DiceLoader {
-        private var messages = [(Result<Dice, Error>) -> Void]()
+        private var messages = [(Result<[Dice], Error>) -> Void]()
         
         var messagesCount: Int { messages.count }
         
-        func getDice(completion: @escaping (Result<Dice, Error>) -> Void) {
+        func getDice(diceCount: Int, completion: @escaping (Result<[Dice], Error>) -> Void) {
             messages.append(completion)
         }
     }
