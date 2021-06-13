@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RandomDiceGenerator {
+final class RandomDiceGenerator {
     private let lowerBound: Int
     private let higherBound: Int
     

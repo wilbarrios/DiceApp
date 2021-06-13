@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DiceAppUseCase {
+final class DiceAppUseCase {
     // MARK: Datasource
     private let loader: DiceLoader
     
