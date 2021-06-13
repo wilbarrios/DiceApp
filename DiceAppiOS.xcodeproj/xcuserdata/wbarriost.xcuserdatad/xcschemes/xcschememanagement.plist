@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DiceAppCore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>DiceAppCoreTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>DiceAppiOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +27,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>BFBCEE172676968900242B2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BFBCEE26267696AD00242B2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>BFC617762672E22800C9DC8A</key>
 		<dict>
 			<key>primary</key>
