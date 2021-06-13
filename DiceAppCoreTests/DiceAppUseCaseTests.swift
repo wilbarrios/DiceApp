@@ -42,10 +42,17 @@ class DiceAppUseCase {
     
     func loadDices() {
         loader.getDice(diceCount: DICE_COUNT) { [weak self] result in
-            if let dices = try? result.get() {
+            switch result {
+            case .success(let dices):
                 self?.view.present(dices)
+            case .failure(let error):
+                self?.errorView.present(errorMessage: DiceAppUseCase.parseError(error))
             }
         }
+    }
+    
+    private static func parseError(_ error: Error) -> String {
+        return "Load error, try again later"
     }
 }
 
@@ -78,6 +85,10 @@ class DiceAppUseCaseTests: XCTestCase {
         assert(makeSUT(), completeResult: .failure(makeAnyError()), expectedDices: nil)
     }
     
+    func test_loadDiceFailed_presentsErrorMessage() {
+        assert(makeSUT(), completeResult: .failure(makeAnyError()), expectedErrorMessage: "Load error, try again later")
+    }
+    
     // MARK: Helpers
     private func makeAnyError() -> NSError {
         return NSError(domain: "anyDomain", code: 1)
@@ -93,7 +104,9 @@ class DiceAppUseCaseTests: XCTestCase {
         if let _ed = expectedDices {
             XCTAssertEqual(view.presentedDices, _ed, file: file, line: line)
         }
-        XCTAssertEqual(errorView.presentedErrorMessage, expectedErrorMessage, file: file, line: line)
+        if let _eem = expectedErrorMessage {
+            XCTAssertEqual(errorView.presentedErrorMessage, _eem, file: file, line: line)
+        }
     }
     
     private func makeDice(value: Int = 2) -> Dice {
